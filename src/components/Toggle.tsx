@@ -12,16 +12,16 @@ const Toggle = () => {
     <div className=" w-1/2transition duration-500 ease-in-out rounded-full">
       {isDarkMode ? (
         <img
-          className="h-8 block"
+          className="h-8 w-16 block"
           onClick={() => dispatch(handleTheme({ isDarkMode: false }))}
-          src={SwitchLight}
+          src={SwitchDark}
           alt="toggleIcon"
         />
       ) : (
         <img
-          className="h-8 block"
+          className="h-8 w-16 block"
           onClick={() => dispatch(handleTheme({ isDarkMode: true }))}
-          src={SwitchDark}
+          src={SwitchLight}
           alt="toggleIcon"
         />
       )}
