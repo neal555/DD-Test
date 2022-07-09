@@ -1,23 +1,26 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import React from "react";
 import SwitchLight from "../assets/SwitchLight.svg";
 import SwitchDark from "../assets/SwitchDark.svg";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { themeSelector } from "../redux/theme/ThemeSelector";
+import { handleTheme } from "../redux/theme/ThemeActions";
 const Toggle = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { isDarkMode } = useAppSelector(themeSelector);
+  const dispatch = useAppDispatch();
 
   return (
     <div className=" w-1/2transition duration-500 ease-in-out rounded-full">
-      {theme === "dark" ? (
+      {isDarkMode ? (
         <img
           className="h-8 block"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => dispatch(handleTheme({ isDarkMode: false }))}
           src={SwitchLight}
           alt="toggleIcon"
         />
       ) : (
         <img
           className="h-8 block"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => dispatch(handleTheme({ isDarkMode: true }))}
           src={SwitchDark}
           alt="toggleIcon"
         />
