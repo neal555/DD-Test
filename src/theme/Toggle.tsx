@@ -1,21 +1,25 @@
 import React, { useContext } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
 import { ThemeContext } from "./ThemeContext";
-
+import SwitchLight from "../assets/SwitchLight.svg";
+import SwitchDark from "../assets/SwitchDark.svg";
 const Toggle = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div className="transition duration-500 ease-in-out rounded-full p-2">
+    <div className=" w-1/2transition duration-500 ease-in-out rounded-full">
       {theme === "dark" ? (
-        <FaSun
+        <img
+          className="h-8 block"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer"
+          src={SwitchLight}
+          alt="toggleIcon"
         />
       ) : (
-        <FaMoon
+        <img
+          className="h-8 block"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer"
+          src={SwitchDark}
+          alt="toggleIcon"
         />
       )}
     </div>

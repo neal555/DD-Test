@@ -28,6 +28,8 @@ module.exports = {
       gray: "#939B9F",
       "gray-light": "#D3D6DA",
       "gray-extra-light": "#E5E5E5",
+      bar: "#F3F3F3",
+      "bar-light": "rgba(218, 220, 224, 0.03)",
     },
   },
   plugins: [],

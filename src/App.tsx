@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
+import { Bar } from "./components/Bar";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline dark:text-white">
-        Hello world!
-      </h1>
+    <div className="flex flex-col items-center">
+      <Bar />
     </div>
   );
 }
