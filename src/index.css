@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.yellow {
+  background-color: #ceb02c;
+}
+
+.gray {
+  background-color: #939b9f;
+}
+
+.empty-key {
+  background-color: #939b9f4d;
+}
+/* "gray-dark": "#3C4150",
+      gray: "",
+      "gray-light": "#D3D6DA",
+      "gray-extra-light": "#E5E5E5",
+      bar: "#F3F3F3",
+      "bar-light": "rgba(218, 220, 224, 0.03)",
+      "empty-key": "#939B9F4D", */

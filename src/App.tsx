@@ -3,13 +3,19 @@ import "./App.css";
 import { Bar } from "./components/Bar";
 import { Grid } from "./components/Grid";
 import { InfoModal } from "./components/InfoModal";
+import { Keyboard } from "./components/Keyboard";
+import { LogsModal } from "./components/LogsModal";
 
 function App() {
   return (
     <div className="flex flex-col items-center">
       <Bar />
+      <div className="stiki">
+        <Grid />
+      </div>
+      <Keyboard />
       <InfoModal />
-      <Grid />
+      <LogsModal />
     </div>
   );
 }

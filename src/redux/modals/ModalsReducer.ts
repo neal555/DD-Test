@@ -6,9 +6,14 @@ export interface Modals {
   showLogsModal: boolean;
 }
 
+const getInitialInstruction = (): boolean => {
+  const isReaded = localStorage.getItem("instructions") === "readed";
+  return !isReaded;
+};
+
 const INITIAL_STATE: Modals = {
-  showInfoModal: true,
-  showLogsModal: false,
+  showInfoModal: getInitialInstruction(),
+  showLogsModal: true,
 };
 const modalsReducer = createReducer(INITIAL_STATE, (builder) => {
   builder.addCase(setModalsReducer, (state, action) => {

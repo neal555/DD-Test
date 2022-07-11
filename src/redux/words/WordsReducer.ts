@@ -4,19 +4,17 @@ import { setWordsReducer } from "./WordsActions";
 export interface Words {
   currentWord: string[];
   fails: any[];
-  currentAttempt: string[];
+  currentAttempt: number;
+  currentIndex: number;
+  currentChars: string[];
 }
 
 const INITIAL_STATE: Words = {
   currentWord: "COMPU".split(""),
-  fails: [
-    ["C", "U", "M", "P", "U"],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-  ],
-  currentAttempt: [],
+  fails: [],
+  currentAttempt: 0,
+  currentIndex: 0,
+  currentChars: [],
 };
 const wordsReducer = createReducer(INITIAL_STATE, (builder) => {
   builder.addCase(setWordsReducer, (state, action) => {

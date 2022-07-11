@@ -32,7 +32,7 @@ export const InfoModal = () => {
         <div className="flex w-11/12 flex justify-evenly mb-2">
           <Char color="blue">{"V"}</Char>
           <Char color="blue">{"O"}</Char>
-          <Char color="yellow">{"C"}</Char>
+          <Char color=" yellow">{"C"}</Char>
           <Char color="blue">{"A"}</Char>
           <Char color="blue">{"L"}</Char>
         </div>
@@ -45,7 +45,7 @@ export const InfoModal = () => {
           <Char color="blue">{"A"}</Char>
           <Char color="blue">{"N"}</Char>
           <Char color="blue">{"T"}</Char>
-          <Char color="gray">{"O"}</Char>
+          <Char color=" gray">{"O"}</Char>
         </div>
         <p className="text-xs text-left w-full mb-4">
           La letra <strong>O</strong> no está en la palabra.
@@ -59,7 +59,10 @@ export const InfoModal = () => {
         </p>
 
         <button
-          onClick={() => dispatch(setModalsReducer({ showInfoModal: false }))}
+          onClick={() => {
+            dispatch(setModalsReducer({ showInfoModal: false }));
+            localStorage.setItem("instructions", "readed");
+          }}
           className="bg-green rounded px-8 py-1 font-bold text-lg text-white"
         >
           !JUGAR¡

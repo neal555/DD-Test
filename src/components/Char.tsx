@@ -7,7 +7,7 @@ type ChartType = {
 export const Char = (props: ChartType) => {
   return (
     <div
-      className={`bg-${props.children === "" ? "empty-key" : props.color} ${
+      className={`bg-${props?.color ?? " empty-key"} ${
         props.whithMargin
           ? ""
           : "border-2 border-solid border-black dark:border-gray "
