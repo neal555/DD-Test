@@ -16,26 +16,28 @@ export const LogsModal = () => {
   return (
     <Modal visible={showLogsModal}>
       <div>
-        <h1 className="text-center mt-2 text-2xl">Estadísticas</h1>
+        <h1 className="text-center mt-2 text-2xl font-bold">Estadísticas</h1>
       </div>
       <div className="flex justify-evenly text-center">
         <div className="mt-2">
-          <h3 className="mt-2 text-2xl">{localGames ?? "0"}</h3>
+          <h3 className="mt-2 text-2xl font-bold">{localGames ?? "0"}</h3>
           <p className="text-sm">Jugadas</p>
         </div>
         <div className="mt-2">
-          <h3 className="mt-2 text-2xl">{localVictories ?? "0"}</h3>
+          <h3 className="mt-2 text-2xl font-bold">{localVictories ?? "0"}</h3>
           <p className="text-sm">Victorias</p>
         </div>
       </div>
       <div className="text-center">
         {fails.length === 4 &&
-          JSON.stringify(currentWord) !== JSON.stringify(fails[3]) && (
+          JSON.stringify(currentWord) !==
+            JSON.stringify(fails[fails.length - 1]) && (
             <p className="mt-2">
               La palabra era: <strong>{currentWord}</strong>
             </p>
           )}
-        {JSON.stringify(currentWord) === JSON.stringify(fails[3]) && (
+        {JSON.stringify(currentWord) !==
+          JSON.stringify(fails[fails.length - 1]) && (
           <p className="mt-2">¡Correcto!</p>
         )}
         <p className="mt-2">SIGUIENTE PALABRA</p>

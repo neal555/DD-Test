@@ -26,7 +26,7 @@ export const Timer = () => {
   const mins = Math.floor(timeLeft / 60);
   return (
     <div>
-      <h3>{`0${mins} : ${
+      <h3 className="font-bold">{`0${mins} : ${
         timeLeft % 60 > 9 ? timeLeft % 60 : "0" + (timeLeft % 60)
       }`}</h3>
     </div>

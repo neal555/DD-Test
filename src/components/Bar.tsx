@@ -12,7 +12,7 @@ export const Bar = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="bg-bar dark:bg-bar-light px-5 py-2 w-4/6 flex flex-row items-center justify-between rounded-md my-8">
+    <div className="bg-bar dark:bg-bar-light px-5 py-2 flex flex-row items-center justify-between rounded-md my-8 w-11/12 md:w-4/6">
       <img
         onClick={() => dispatch(setModalsReducer({ showInfoModal: true }))}
         className="block"

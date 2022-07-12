@@ -21,41 +21,41 @@ export const Keyboard = () => {
     });
   });
   return (
-    <div className="bg-bar-light p-4 rounded ">
-      <div className="flex ml-4">
-        <KeyChar color={charDict?.Q ?? null}>Q</KeyChar>
-        <KeyChar color={charDict?.W ?? null}>W</KeyChar>
-        <KeyChar color={charDict?.E ?? null}>E</KeyChar>
-        <KeyChar color={charDict?.R ?? null}>R</KeyChar>
-        <KeyChar color={charDict?.T ?? null}>T</KeyChar>
-        <KeyChar color={charDict?.Y ?? null}>Y</KeyChar>
-        <KeyChar color={charDict?.U ?? null}>U</KeyChar>
-        <KeyChar color={charDict?.I ?? null}>I</KeyChar>
-        <KeyChar color={charDict?.O ?? null}>O</KeyChar>
-        <KeyChar color={charDict?.P ?? null}>P</KeyChar>
+    <div className="bg-bar dark:bg-bar-light p-2 sm:p-4 rounded ">
+      <div className="flex ml-2 sm:ml-4">
+        <KeyChar color={charDict?.Q ?? " empty-key"}>Q</KeyChar>
+        <KeyChar color={charDict?.W ?? " empty-key"}>W</KeyChar>
+        <KeyChar color={charDict?.E ?? " empty-key"}>E</KeyChar>
+        <KeyChar color={charDict?.R ?? " empty-key"}>R</KeyChar>
+        <KeyChar color={charDict?.T ?? " empty-key"}>T</KeyChar>
+        <KeyChar color={charDict?.Y ?? " empty-key"}>Y</KeyChar>
+        <KeyChar color={charDict?.U ?? " empty-key"}>U</KeyChar>
+        <KeyChar color={charDict?.I ?? " empty-key"}>I</KeyChar>
+        <KeyChar color={charDict?.O ?? " empty-key"}>O</KeyChar>
+        <KeyChar color={charDict?.P ?? " empty-key"}>P</KeyChar>
       </div>
-      <div className="flex ml-6">
-        <KeyChar color={charDict?.A ?? null}>A</KeyChar>
-        <KeyChar color={charDict?.S ?? null}>S</KeyChar>
-        <KeyChar color={charDict?.D ?? null}>D</KeyChar>
-        <KeyChar color={charDict?.F ?? null}>F</KeyChar>
-        <KeyChar color={charDict?.G ?? null}>G</KeyChar>
-        <KeyChar color={charDict?.H ?? null}>H</KeyChar>
-        <KeyChar color={charDict?.J ?? null}>J</KeyChar>
-        <KeyChar color={charDict?.K ?? null}>K</KeyChar>
-        <KeyChar color={charDict?.L ?? null}>L</KeyChar>
-        <KeyChar color={charDict?.Ñ ?? null}>Ñ</KeyChar>
+      <div className="flex ml-4 sm:ml-6 ">
+        <KeyChar color={charDict?.A ?? " empty-key"}>A</KeyChar>
+        <KeyChar color={charDict?.S ?? " empty-key"}>S</KeyChar>
+        <KeyChar color={charDict?.D ?? " empty-key"}>D</KeyChar>
+        <KeyChar color={charDict?.F ?? " empty-key"}>F</KeyChar>
+        <KeyChar color={charDict?.G ?? " empty-key"}>G</KeyChar>
+        <KeyChar color={charDict?.H ?? " empty-key"}>H</KeyChar>
+        <KeyChar color={charDict?.J ?? " empty-key"}>J</KeyChar>
+        <KeyChar color={charDict?.K ?? " empty-key"}>K</KeyChar>
+        <KeyChar color={charDict?.L ?? " empty-key"}>L</KeyChar>
+        <KeyChar color={charDict?.Ñ ?? " empty-key"}>Ñ</KeyChar>
       </div>
       <div className="flex">
-        <KeyChar>ENTER</KeyChar>
-        <KeyChar color={charDict?.Z ?? null}>Z</KeyChar>
-        <KeyChar color={charDict?.X ?? null}>X</KeyChar>
-        <KeyChar color={charDict?.C ?? null}>C</KeyChar>
-        <KeyChar color={charDict?.V ?? null}>V</KeyChar>
-        <KeyChar color={charDict?.B ?? null}>B</KeyChar>
-        <KeyChar color={charDict?.N ?? null}>N</KeyChar>
-        <KeyChar color={charDict?.M ?? null}>M</KeyChar>
-        <KeyChar color={null}>{"<-"}</KeyChar>
+        <KeyChar color={" empty-key"}>ENTER</KeyChar>
+        <KeyChar color={charDict?.Z ?? " empty-key"}>Z</KeyChar>
+        <KeyChar color={charDict?.X ?? " empty-key"}>X</KeyChar>
+        <KeyChar color={charDict?.C ?? " empty-key"}>C</KeyChar>
+        <KeyChar color={charDict?.V ?? " empty-key"}>V</KeyChar>
+        <KeyChar color={charDict?.B ?? " empty-key"}>B</KeyChar>
+        <KeyChar color={charDict?.N ?? " empty-key"}>N</KeyChar>
+        <KeyChar color={charDict?.M ?? " empty-key"}>M</KeyChar>
+        <KeyChar color={" empty-key"}>{"<-"}</KeyChar>
       </div>
     </div>
   );

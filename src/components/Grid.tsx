@@ -11,7 +11,7 @@ export const Grid = () => {
       <div className=" p-3 min-w-full">
         {fails.map((word, i) => {
           return (
-            <div className=" flex flex-row" key={i.toString()}>
+            <div className=" flex flex-row justify-center" key={i.toString()}>
               {word.map((char: string, index: number) => {
                 let bgChart = "";
                 const indexChart = currentWord.indexOf(char);
@@ -32,7 +32,7 @@ export const Grid = () => {
             </div>
           );
         })}
-        <div className=" flex flex-row">
+        <div className=" flex flex-row justify-center">
           {currentChars.map((char: string, index: number) => {
             return (
               <Char key={index.toString()} whithMargin>
@@ -47,7 +47,7 @@ export const Grid = () => {
           {currentChars.length <= 4 && <Char whithMargin>{""}</Char>}
         </div>
         {fails.length <= 0 && (
-          <div className=" flex flex-row">
+          <div className=" flex flex-row justify-center">
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
@@ -56,7 +56,7 @@ export const Grid = () => {
           </div>
         )}
         {fails.length <= 1 && (
-          <div className=" flex flex-row">
+          <div className=" flex flex-row justify-center">
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
@@ -65,7 +65,7 @@ export const Grid = () => {
           </div>
         )}
         {fails.length <= 2 && (
-          <div className=" flex flex-row">
+          <div className=" flex flex-row justify-center">
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
@@ -74,7 +74,7 @@ export const Grid = () => {
           </div>
         )}
         {fails.length <= 3 && (
-          <div className=" flex flex-row">
+          <div className=" flex flex-row justify-center">
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>
             <Char whithMargin>{""}</Char>

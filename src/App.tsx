@@ -10,9 +10,7 @@ function App() {
   return (
     <div className="flex flex-col items-center">
       <Bar />
-      <div className="stiki">
-        <Grid />
-      </div>
+      <Grid />
       <Keyboard />
       <InfoModal />
       <LogsModal />

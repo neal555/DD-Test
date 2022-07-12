@@ -95,9 +95,7 @@ export const KeyChar = (props: ChartType) => {
 
   return (
     <div
-      className={` bg-${props.color ?? "key-light"} dark:bg-${
-        props.color ?? "key-dark"
-      }  p-1 w-aouto m-1 px-3 h-8 flex items-center justify-center rounded font-bold text-sm cursor-pointer
+      className={` bg-${props.color} dark:bg-${props.color}  m-1 px-2 py-1 sm:px-3 sm:py-4 sm:text-sm h-8 text-xs flex items-center justify-center rounded font-bold cursor-pointer
       `}
       onClick={() => handleKey(props.children)}
     >

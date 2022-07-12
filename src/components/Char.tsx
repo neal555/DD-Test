@@ -11,7 +11,7 @@ export const Char = (props: ChartType) => {
         props.whithMargin
           ? ""
           : "border-2 border-solid border-black dark:border-gray "
-      }p-1 w-14 h-14 flex items-center justify-center rounded font-bold text-lg ${
+      }p-1 w-10 h-10 sm:w-14 sm:h-14  flex items-center justify-center rounded font-bold text-lg ${
         props.whithMargin ? "m-1 " : ""
       }
       `}

@@ -14,6 +14,12 @@ module.exports = {
         "2xl": "6rem",
       },
     },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
     colors: {
       white: "#FFF",
       black: "#000",
@@ -27,8 +33,8 @@ module.exports = {
       "gray-dark": "#3C4150",
       gray: "#939B9F",
       "gray-light": "#D3D6DA",
-      "gray-extra-light": "#E5E5E5",
-      bar: "#F3F3F3",
+      "gray-extra-light": "#f9f9f9",
+      bar: "rgba(218, 220, 224, 0.3)",
       "bar-light": "rgba(218, 220, 224, 0.03)",
       "empty-key": "#939B9F4D",
     },
