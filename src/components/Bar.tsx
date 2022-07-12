@@ -20,7 +20,7 @@ export const Bar = () => {
         alt="helpIcon"
       />
       <div>WORDLE</div>
-      <div className="flex">
+      <div className="flex items-center">
         <img
           onClick={() => dispatch(setModalsReducer({ showLogsModal: true }))}
           className="block"

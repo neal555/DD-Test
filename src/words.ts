@@ -1,5 +1,3 @@
-// const fs = require("fs");
-
 export const data = [
   "abeto",
   "abiso",
@@ -4619,23 +4617,3 @@ export const data = [
   "zurea",
   "zureo",
 ];
-// const newArr = [];
-// data.forEach((word) => {
-//   const charts = word.split("");
-//   let result = charts.filter((item, index) => {
-//     return charts.indexOf(item) === index;
-//   });
-//   if (result.length === 5) {
-//     newArr.push(word);
-//   }
-// });
-
-// // console.log(newArr);
-
-// fs.writeFile("wo.txt", JSON.stringify(newArr), (err) => {
-//   if (err) {
-//     console.error(err);
-//     return;
-//   }
-//   //file written successfully
-// });

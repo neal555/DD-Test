@@ -60,7 +60,9 @@ export const InfoModal = () => {
 
         <button
           onClick={() => {
-            dispatch(setModalsReducer({ showInfoModal: false }));
+            dispatch(
+              setModalsReducer({ showInfoModal: false, runingTimeout: true })
+            );
             localStorage.setItem("instructions", "readed");
           }}
           className="bg-green rounded px-8 py-1 font-bold text-lg text-white"

@@ -4,6 +4,8 @@ import { setModalsReducer } from "./ModalsActions";
 export interface Modals {
   showInfoModal: boolean;
   showLogsModal: boolean;
+  timeLeft: number;
+  runingTimeout: boolean;
 }
 
 const getInitialInstruction = (): boolean => {
@@ -13,7 +15,9 @@ const getInitialInstruction = (): boolean => {
 
 const INITIAL_STATE: Modals = {
   showInfoModal: getInitialInstruction(),
-  showLogsModal: true,
+  showLogsModal: false,
+  timeLeft: 300,
+  runingTimeout: getInitialInstruction(),
 };
 const modalsReducer = createReducer(INITIAL_STATE, (builder) => {
   builder.addCase(setModalsReducer, (state, action) => {
