@@ -40,46 +40,49 @@ export const Grid = () => {
               </Char>
             );
           })}
+          {currentChars.length <= 0 && <Char whithMargin>{""}</Char>}
+          {currentChars.length <= 1 && <Char whithMargin>{""}</Char>}
+          {currentChars.length <= 2 && <Char whithMargin>{""}</Char>}
+          {currentChars.length <= 3 && <Char whithMargin>{""}</Char>}
+          {currentChars.length <= 4 && <Char whithMargin>{""}</Char>}
         </div>
+        {fails.length <= 0 && (
+          <div className=" flex flex-row">
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+          </div>
+        )}
+        {fails.length <= 1 && (
+          <div className=" flex flex-row">
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+          </div>
+        )}
+        {fails.length <= 2 && (
+          <div className=" flex flex-row">
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+          </div>
+        )}
+        {fails.length <= 3 && (
+          <div className=" flex flex-row">
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+            <Char whithMargin>{""}</Char>
+          </div>
+        )}
       </div>
-
-      {/* <div className="p-3 min-w-full">
-        <div className=" flex flex-row">
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-        </div>
-        <div className=" flex flex-row">
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-        </div>
-        <div className=" flex flex-row">
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-        </div>
-        <div className=" flex flex-row">
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-        </div>
-        <div className=" flex flex-row">
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-          <Char whithMargin>{""}</Char>
-        </div>
-      </div> */}
     </div>
   );
 };
