@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useAppSelector } from "../redux/hooks";
 import { wordsSelector } from "../redux/words/WordsSelector";
 import { KeyChar } from "./KeyChar";
 
 export const Keyboard = () => {
   const { fails, currentWord } = useAppSelector(wordsSelector);
+  useEffect(() => {
+    console.log(currentWord);
+  }, [currentWord]);
   const charDict: any = {};
   fails.forEach((word) => {
     word.forEach((char: string, index: number) => {
